@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phoneVerifyFragment">
+    <fragment
+        android:id="@+id/phoneVerifyFragment"
+        android:name="com.devnags.pingme.ui.PhoneVerifyFragment"
+        android:label="fragment_phone_verify"
+        tools:layout="@layout/fragment_phone_verify" >
+        <action
+            android:id="@+id/action_phoneVerifyFragment_to_otpVerifyFragment2"
+            app:destination="@id/otpVerifyFragment2" />
+        <action
+            android:id="@+id/action_phoneVerifyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerifyFragment2"
+        android:name="com.devnags.pingme.ui.OtpVerifyFragment"
+        android:label="OtpVerifyFragment" >
+        <action
+            android:id="@+id/action_otpVerifyFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.devnags.pingme.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

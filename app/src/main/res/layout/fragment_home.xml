@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="profile"
+            type="com.devnags.pingme.adapters.model.Profiles" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeFragment">
+
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="102dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="137dp"
+            android:layout_marginTop="53dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/notes"
+            android:textAppearance="@style/notes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/personal_me"
+            android:layout_width="215dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="94dp"
+            android:gravity="top"
+            android:text="@string/personal_me"
+            android:textAppearance="@style/personal_me"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/upgrade_but"
+            android:layout_width="113dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="247dp"
+            android:layout_marginTop="507dp"
+            android:background="@drawable/upgrade_but"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/upgrade"
+            android:layout_width="62dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="273dp"
+            android:layout_marginTop="525dp"
+            android:gravity="top"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/upgrade"
+            android:textAppearance="@style/upgrade"
+            android:translationY="-2.31sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/premium_mem"
+            android:layout_width="192dp"
+            android:layout_height="91dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="520dp"
+            android:gravity="top"
+            android:text="@string/premium_mem"
+            android:textAppearance="@style/premium_mem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/interested_"
+            android:layout_width="273dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="488dp"
+            android:gravity="top"
+            android:text="@string/interested_"
+            android:textAppearance="@style/interested_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="130dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/rectangle_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/rectangle_3"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/meena_background" />
+
+            <TextView
+                android:id="@+id/meena_23"
+                android:layout_width="106dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="40dp"
+                android:lineSpacingExtra="0sp"
+                android:text="@{profile.generalInformation.firstName}"
+                android:textAppearance="@style/meena_23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tap_to_revi"
+                android:layout_width="192dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="bottom|center"
+                android:text="@string/tap_to_revi"
+                android:textAppearance="@style/tap_to_revi"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

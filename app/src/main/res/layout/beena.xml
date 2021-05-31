@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/beena"
+    android:layout_width="167dp"
+    android:layout_height="255dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="192dp"
+    android:layout_marginTop="570dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/auro"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/auro"
+        android:textAppearance="@style/auro" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/plane_rectangle_3"
+        />
+    <View
+        android:id="@+id/photo_15401"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/photo_15401"
+        />
+
+</RelativeLayout>
